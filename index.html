@@ -12,7 +12,7 @@
   gtag('config', 'AW-18273872290');
 </script>
 
-<!-- Event snippet for 出站点击 conversion page
+<!-- Event snippet for 购买 conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -22,8 +22,12 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-18503681609/ePN8CIal_ZYdEMmMn_dE',
+      'send_to': 'AW-18273872290/cQwWCN_mpZkdEKLT1IlE',
+      'value': 1.0,
+      'currency': 'USD',
+      'transaction_id': '',
       'event_callback': callback
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
   });
   return false;
 }
